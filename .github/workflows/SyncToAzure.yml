@@ -24,7 +24,8 @@ jobs:
 
     - name: Copy files to Azure DevOps repository
       run: |
-        cp -r * MicasaWebsite/
+        shopt -s extglob
+        cp -r !(MicasaWebsite) MicasaWebsite/
         cd MicasaWebsite
         git config --global user.email "azrdeveloper_ram1@outlook.com"
         git config --global user.name "RamkumarDev6978"
