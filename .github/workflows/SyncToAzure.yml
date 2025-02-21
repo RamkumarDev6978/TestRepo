@@ -18,7 +18,7 @@ jobs:
 
     - name: Clone Azure DevOps repository
       run: |
-        git clone https://DeveloperRamMicasa:${{ secrets.AZURE_DEVOPS_PAT }}@dev.azure.com/DeveloperRamMicasa/MicasaWebsite/_git/MicasaWebs
+        git clone https://DeveloperRamMicasa:${{ secrets.AZURE_DEVOPS_PAT }}@dev.azure.com/DeveloperRamMicasa/MicasaWebsite/_git/MicasaWebsite
       env:
         AZURE_DEVOPS_PAT: ${{ secrets.AZURE_DEVOPS_PAT }}
 
