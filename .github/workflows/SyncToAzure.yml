@@ -31,6 +31,6 @@ jobs:
         git config --global user.name "RamkumarDev6978"
         git add .
         git commit -m "Sync files from GitHub"
-        git push https://DeveloperRamMicasa:$(AZURE_DEVOPS_PAT)@dev.azure.com/DeveloperRamMicasa/MicasaWebsite/_git/MicasaWebsite
+        git push https://DeveloperRamMicasa:${{ secrets.AZURE_DEVOPS_PAT }}@dev.azure.com/DeveloperRamMicasa/MicasaWebsite/_git/MicasaWebsite
       env:
-        AZURE_DEVOPS_PAT: ${{ secrets.AZURE_DEVOPS_PAT }}
+        AZURE_DEVOPS_PAT: ${{ secrets.AZURE_DEVOPS_PAT 
